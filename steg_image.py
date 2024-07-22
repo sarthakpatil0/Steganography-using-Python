@@ -1,6 +1,7 @@
 import PIL.Image
 import io
 
+#### To Add Image ####
 #img = PIL.Image.open('111.png')
 #byte_arr = io.BytesIO()
 #img.save(byte_arr, format='PNG')
@@ -8,6 +9,8 @@ import io
 #with open('cat.jpg', 'ab') as f:
 #    f.write(byte_arr.getvalue())
 
+
+#### To Extract the Image ####
 with open('cat.jpg', 'rb') as f:
     content = f.read()
     offset = content.index(bytes.fromhex('FFD9'))
